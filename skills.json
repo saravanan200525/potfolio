@@ -1,0 +1,54 @@
+[      {
+    "name": "HTML5",
+    "icon": "https://img.icons8.com/color/48/000000/html-5--v1.png"
+},
+{
+    "name": "CSS3",
+    "icon": "https://img.icons8.com/color/48/000000/css3.png"
+},
+{
+    "name": "JavaScript",
+    "icon": "https://img.icons8.com/color/48/000000/javascript--v1.png"
+},
+{
+    "name": "GitHub",
+    "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+},{
+
+
+      "name": "Git VCS",
+        "icon": "https://img.icons8.com/color/48/000000/git.png"
+    },
+    {
+        "name": "ReactJS",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://img.icons8.com/color/48/000000/mongodb.png"
+    },
+    {
+        "name": "MySQL",
+        "icon": "https://img.icons8.com/color/48/000000/mysql-logo.png"
+    },
+
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/color/48/000000/python--v1.png"
+    },
+    {
+        "name": "figma",
+        "icon": "https://img.icons8.com/?size=100&id=zfHRZ6i1Wg0U&format=png&color=000000"
+    },
+    {
+        "name": "canva",
+        "icon": "https://img.icons8.com/?size=100&id=iWw83PVcBpLw&format=png&color=000000"
+    },
+    {
+        "name": "VS code",
+        "icon": "https://img.icons8.com/?size=100&id=0OQR1FYCuA9f&format=png&color=000000"
+    }
+    
+    
+
+]

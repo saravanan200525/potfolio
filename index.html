@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
     <link id='favicon' rel="shortcut icon" href="./images/favicon.png" type="image/x-png">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
     <title>Portfolio | saravanan</title>
 </head>
 <body oncontextmenu="return false">
@@ -101,7 +103,7 @@
         </div>
         
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1SlNmX-6AKeJxYtvCbvDp-or032NFSQWv/view?usp=drive_link" target="_blank" class="btn"><span>Resume</span>
+            <a href="resume.pdf" target="_blank" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -147,7 +149,7 @@
         </div>
         <div class="content">
         <h3>Bachelor of Technology in Artificial Intelligence & Machine Learning</h3>
-        <p> Panimalar Engineering College | chennai</p>
+        <p><a href="https://panimalar.ac.in/"> Panimalar Engineering College | chennai </a></p>
         <h4>2022-2026 | Pursuing</h4>
         </div>
     </div>
@@ -158,7 +160,7 @@
       </div>
       <div class="content">
       <h3>HSC Science | Computerscience</h3>
-      <p>DON BOSCO METRIC HR,SEC, School | CBSE</p>
+      <p><a href="https://www.donboscoperambur.com/">DON BOSCO METRIC HR,SEC, School | chennai </a></p>
       <h4>2020-2022 | Completed</h4>
       </div>
     </div>
@@ -406,6 +408,41 @@
 <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
 
 <script src="./js/script.js"></script>
+
+
+
+<!-- JavaScript for EmailJS -->
+<script>
+  // Initialize EmailJS with your User ID
+  emailjs.init("fiqM1zJUUc1gabr4j"); // Replace with your EmailJS User ID
+
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    // Retrieve form values
+    const form = event.target;
+    const formData = new FormData(form);
+
+    // Construct email data
+    const emailParams = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      phone: formData.get('phone'),
+      message: formData.get('message')
+    };
+
+    // Send email using EmailJS
+    emailjs.send('service_dti33se', 'template_i9jhcah', emailParams)
+      .then(function(response) {
+        alert('Message sent successfully!');
+        form.reset(); // Reset the form after successful submission
+      }, function(error) {
+        alert('Failed to send message. Please try again.');
+        console.error('EmailJS error:', error);
+      });
+  });
+</script>
+
 
 </body>
 </html>
